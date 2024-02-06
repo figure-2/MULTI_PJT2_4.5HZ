@@ -9,3 +9,5 @@
 - 이도형, 유현준, 정유진, 조민진, 최세인
 
 [🔗발표자료](<https://github.com/figure-2/MULTI_PJT2_4.5HZ/blob/master/6.%20Project%20Results/(D29)_4.5HZ_%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf>)
+# 📽시연
+### [🔗영상Link](https://www.youtube.com/watch?v=Qgy6noP63Cg) 
