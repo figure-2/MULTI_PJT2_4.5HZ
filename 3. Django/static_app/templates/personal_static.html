@@ -1,0 +1,384 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+{% block body %}
+
+<h1 class="main_title">{{username}}님의 4.5Hz 이용 기록</h1>
+<p style="text-align: right;"> 데이터 집계 기간 : {{track_agg.0.start_date}} ~ {{track_agg.0.end_date}} </p>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="artist-track-container">
+    <div>
+        <canvas id="artist_cnt_chart" width="1000" height="600vh"></canvas> <!-- style="position: relative;" -->
+    </div>
+
+    <script>
+        const ctx = document.getElementById('artist_cnt_chart');
+    
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [{% for artist in artist_agg %}'{{ artist.artist }}', {% endfor %}],
+                datasets: [{
+                    label: 'Artist',
+                    data: [{% for artist in artist_agg %}'{{ artist.cnt }}', {% endfor %}],
+                    borderWidth: 1,
+                    backgroundColor: '#0c111e',
+                    borderColor: 'rgba(255, 255, 255, 1)'
+                }]
+            },
+            options: {
+                plugins:{
+                    title: {
+                        display:true,
+                        text: 'Top Artists',
+                        fontSize : 30,
+                        align : 'start',
+                        color : 'white',
+                        padding : 5
+                    },
+                    x : {
+                        ticks:{
+                            color : 'white',
+                        }
+                    }
+                },
+                responsive: false,
+                scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true,
+                            // text: 'Artist',
+                            color: 'white',
+                            font: {
+                                family: 'Comic Sans MS',
+                                size: 20,
+                                // weight: 'bold',
+                                lineHeight: 1.2,
+                            },
+                            padding: {top: 2, left: 0, right: 0, bottom: 0}
+                        },
+                        ticks:{
+                            color: 'white',
+                            font: {
+                                // family: 'Comic Sans MS',//family: 'Times',
+                                size: 15,
+                                style: 'normal',
+                            },
+                        },
+                        grid: {
+                            color:'#444444'
+                        },
+                    },
+                    y: {
+                        display: true,
+                        title: {
+                            display: true,
+                            // text: 'cnt',
+                            color: 'white',
+                            font: {
+                                family: 'Comic Sans MS',//family: 'Times',
+                                size: 20,
+                                style: 'normal',
+                                lineHeight: 1.2
+                            },
+                            padding: {top: 5, left: 0, right: 0, bottom: 10}
+                        },
+                        ticks:{
+                            color: 'white',
+                            font: {
+                                // family: 'Comic Sans MS',//family: 'Times',
+                                size: 15,
+                                style: 'normal',
+                            },
+                        },
+                        grid: {
+                            color:'#444444'
+                        },
+                    }
+                },
+            }
+        });
+    </script>
+
+    <table class="table">
+        <caption style="text-align: left; margin-bottom: 15px;"><strong>Top Tracks</strong></caption>
+        <tr class="person_track_title">
+            <th><strong>순위</strong></th>
+            <th><strong>제목</strong></th>
+            <th><strong>Stream</strong></th>
+        </tr>
+        {% for track in track_agg %}
+            {% if forloop.counter <= 10%}
+                <tr class="person_track_row">  
+                    <td><strong>{{forloop.counter}}</strong></td>
+                    <td>{{ track.track }}</td>
+                    <td>{{ track.cnt }}</td>  
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+
+    {% comment %} <div>
+        <canvas id="track_cnt_chart" width="900" height="500vh"></canvas>
+    </div>
+
+    <script>
+        const ctx2 = document.getElementById('track_cnt_chart');
+
+        new Chart(ctx2, {
+            type: 'bar',  
+            data: {
+                labels: [{% for track in track_agg %}'{{ track.track }}', {% endfor %}],
+                datasets: [{
+                    label: 'track',
+                    data: [{% for track in track_agg %}'{{ track.cnt }}', {% endfor %}],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</div> {% endcomment %}
+
+<div class="day-hour-container">
+    <div>
+        <canvas id="day_cnt_chart" width="850" height="500vh"></canvas>
+    </div>
+
+    <script>
+        const ctx3 = document.getElementById('day_cnt_chart').getContext('2d');
+
+        new Chart(ctx3, {
+            type: 'line',  
+            data: {
+                labels: ['Mon','Tue','Wen','Thu','Fri','Sat','Sun'],
+                datasets: [{
+                    label: 'count',
+                    data: [{% for day in day_agg %}'{{ day.cnt }}', {% endfor %}],
+                    fill: true,
+                    pointStyle: 'circle',
+                    pointRadius: 10,
+                    pointHoverRadius: 15,
+                    lineTension: 0.3, 
+                }]
+            },
+            options: {
+                plugins:{
+                    title: {
+                        display:true,
+                        text: '요일별 접속수',
+                        fontSize : 20,
+                        align : 'start',
+                        color : 'white',
+                        padding : 5
+                    },
+                },
+                responsive: false,
+                scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'Day of Week',
+                            color: 'white',
+                            font: {
+                                family: 'Comic Sans MS',
+                                size: 20,
+                                // weight: 'bold',
+                                lineHeight: 1.2,
+                            },
+                            padding: {top: 10, left: 0, right: 0, bottom: 0}
+                        },
+                        ticks:{
+                            color: 'white',
+                            font: {
+                                // family: 'Comic Sans MS',//family: 'Times',
+                                size: 15,
+                                style: 'normal',
+                            },
+                        },
+                        grid: {
+                            color:'#444444'
+                        },
+                    },
+                    y: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'cnt',
+                            color: 'white',
+                            font: {
+                                family: 'Comic Sans MS',//family: 'Times',
+                                size: 20,
+                                style: 'normal',
+                                lineHeight: 1.2
+                            },
+                            padding: {top: 30, left: 0, right: 0, bottom: 0}
+                        },
+                        ticks:{
+                            color: 'white',
+                            font: {
+                                // family: 'Comic Sans MS',//family: 'Times',
+                                size: 15,
+                                style: 'normal',
+                            },
+                        },
+                        grid: {
+                            color:'#444444'
+                        },
+                    }
+                },
+            }
+        });
+    </script>
+
+    <div>
+        <canvas id="hour_cnt_chart" width="850" height="500vh"></canvas>
+    </div>
+
+    <script>
+        const ctx5 = document.getElementById('hour_cnt_chart');
+
+        new Chart(ctx5, {
+            type: 'line',  
+            data: {
+                labels: [{% for hour in hour_agg %}'{{ hour.hour }}', {% endfor %}],
+                datasets: [{
+                    label: 'count',
+                    data: [{% for hour in hour_agg %}'{{ hour.cnt }}', {% endfor %}],
+                    // fill: true,
+                    pointStyle: 'circle',
+                    pointRadius: 5,
+                    pointHoverRadius: 10,
+                    lineTension: 0.3, 
+                }]
+            },
+            options: {
+                plugins:{
+                    title: {
+                        display:true,
+                        text: '시간대별 접속수',
+                        fontSize : 20,
+                        align : 'start',
+                        color : 'white',
+                        padding : 5
+                    },
+                    x : {
+                        ticks:{
+                            color : 'white',
+                        }
+                    }
+                },
+                responsive: false,
+                scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'time',
+                            color: 'white',
+                            font: {
+                                family: 'Comic Sans MS',
+                                size: 20,
+                                // weight: 'bold',
+                                lineHeight: 1.2,
+                            },
+                            padding: {top: 10, left: 0, right: 0, bottom: 0}
+                        },
+                        ticks:{
+                            color: 'white',
+                            font: {
+                                // family: 'Comic Sans MS',//family: 'Times',
+                                size: 15,
+                                style: 'normal',
+                            },
+                        },
+                        grid: {
+                            color:'#444444'
+                        },
+                    },
+                    y: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'cnt',
+                            color: 'white',
+                            font: {
+                                family: 'Comic Sans MS',//family: 'Times',
+                                size: 20,
+                                style: 'normal',
+                                lineHeight: 1.2
+                            },
+                            padding: {top: 30, left: 0, right: 0, bottom: 0}
+                        },
+                        ticks:{
+                            color: 'white',
+                            font: {
+                                // family: 'Comic Sans MS',//family: 'Times',
+                                size: 15,
+                                style: 'normal',
+                            },
+                        },
+                        grid: {
+                            color:'#444444'
+                        },
+                    }
+                },
+            }
+        });
+    </script>
+</div>
+
+<div class="genre-container">
+    <div>
+        <canvas id="genre_cnt_chart" width="1500" height="700"></canvas>
+    </div>
+
+    <script>
+        const ctx4 = document.getElementById('genre_cnt_chart');
+        new Chart(ctx4, {
+            // type: 'pie',  
+            type:'doughnut',
+            data: {
+                labels: [{% for genre in genre_agg %}'{{ genre.track_genre }}', {% endfor %}],
+                datasets: [{
+                    label: 'genre',
+                    data: [{% for genre in genre_agg %}'{{ genre.cnt }}', {% endfor %}],
+                    backgroundColor: 
+                    ['#F15F5F','#F29661','#F2CB61','#86E57F','#5CD1E5','#6799FF','#6B66FF','#A566FF','#F361DC','#F361A6','#A6A6A6','#8C8C8C'],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                plugins:{
+                    title: {
+                        display:true,
+                        text: '장르 선호도',
+                        fontSize : 50,
+                        align : 'center',
+                        color : 'white',
+                        padding : 5
+                    },
+                    legend:{
+                        labels:{
+                            color : 'white',
+                        },
+                        //maxHeight : 100000,
+                    }
+                },
+                responsive: false,
+            }
+        });
+    </script>
+</div>
+
+{% endblock %}
