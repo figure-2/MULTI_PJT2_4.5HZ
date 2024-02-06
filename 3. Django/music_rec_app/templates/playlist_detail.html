@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<div onclick="history.back()" style="font-size: 28px;">
+    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+</div>   
+
+
+<div class="track-container">
+    {% for track in inplaylist_tracks %}
+        <div class="track-card-playlist">
+            <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                <img src="{{ track.track_picture_url }}" alt="Track Image" class="playlist_album">
+                <p class='inpl_names'><strong>{{ track.track_name }}</strong></p>
+                <p class='inpl_names'>{{ track.artist_name }}</p>
+            </a>
+        </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

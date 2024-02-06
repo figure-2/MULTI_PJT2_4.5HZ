@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    <!-- popup.html의 form 태그 부분 수정 -->
+    <form name="myform" id="myform" method="post" action="{% url 'music_rec_app:add_to_playlist' track_id=track_id %}">
+        {% csrf_token %}
+        
+        <fieldset>
+            <legend style="font-size:18px;">별점 선택하기</legend>
+            <input type="radio" name="rating_score" value="5" id="rate1"><label for="rate1">⭐</label>
+            <input type="radio" name="rating_score" value="4" id="rate2"><label for="rate2">⭐</label>
+            <input type="radio" name="rating_score" value="3" id="rate3"><label for="rate3">⭐</label>
+            <input type="radio" name="rating_score" value="2" id="rate4"><label for="rate4">⭐</label>
+            <input type="radio" name="rating_score" value="1" id="rate5"><label for="rate5">⭐</label>
+        </fieldset>
+
+        {% comment %} <input type="hidden" name="cnt" value="{{ cnt_values }}" /> {% endcomment %}
+        {% comment %} <input type="hidden" name="cnt" id="ratingInput" value="" /> {% endcomment %}
+
+        {% comment %} <input type="submit" value="별점 입력"> {% endcomment %}
+    </form>
+
+    <button id="closeButton" style="font-size: 14px;">닫 기</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 팝업이 열린 후 별점 선택에 따라 rating_score 값을 업데이트
+            document.querySelectorAll('input[name="rating_score"]').forEach(function (radio) {
+                radio.addEventListener('click', function () {
+                    // 선택한 별점 값을 히든 필드에 설정
+                    document.getElementById('ratingInput').value = this.value;
+                });
+            });
+
+            // 닫기 버튼 클릭 시 폼 제출
+            document.getElementById('closeButton').addEventListener('click', function () {
+                submitForm();
+            });
+        });
+
+        {% comment %} function submitForm() {
+            // JavaScript로 cnt 값을 설정
+            var ratingValue = document.getElementById('ratingInput').value;
+            var cntValue;
+            if (ratingValue === '5') {
+                cntValue = Math.floor(Math.random() * (40 - 21 + 1)) + 21;
+            } else if (ratingValue === '4') {
+                cntValue = Math.floor(Math.random() * (60 - 41 + 1)) + 41;
+            } else if (ratingValue === '3') {
+                cntValue = Math.floor(Math.random() * (80 - 61 + 1)) + 61;
+            } else if (ratingValue === '2') {
+                cntValue = Math.floor(Math.random() * (100 - 81 + 1)) + 81;
+            } else if (ratingValue === '1') {
+                cntValue = Math.floor(Math.random() * (120 - 101 + 1)) + 101;
+            }
+        
+            // 히든 필드 업데이트
+            document.getElementById('ratingInput').value = cntValue;
+        
+            // 폼 제출
+            var form = document.getElementById('myform');
+            form.submit();
+        } {% endcomment %}
+
+        
+
+        function submitForm() {
+            var form = document.getElementById('myform');
+            var formData = new FormData(form);
+
+            // Ajax를 이용한 비동기 처리
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', form.action, true);
+            xhr.setRequestHeader('X-CSRFToken', '{% csrf_token %}');
+            xhr.onload = function () {
+                // 폼 제출 후 처리 로직 작성
+                // 예: 창 닫기 등
+                window.close();
+            };
+            xhr.send(formData);
+        } 
+
+        {% comment %} document.getElementById('closeButton').addEventListener('click', function () {
+            submitForm();
+            window.opener.location.reload(); // 부모 페이지 새로 고침
+            window.close();
+        }); {% endcomment %}
+    </script>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</body>
+</html>

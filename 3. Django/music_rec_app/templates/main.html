@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h1 class="main_title">{{username}}님에게 추천하는 노래</h1>
+
+<div class="track-container">
+    {% for track in track_list %}
+        <div class="track-card">
+            <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                <img src="{{ track.track_picture_url }}" alt="Track Image" class="album_img">
+                <p class='names'><strong>{{ track.track_name }}</strong></p>
+                <p class='names'>{{ track.artist_name }}</p>
+            </a>
+        </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

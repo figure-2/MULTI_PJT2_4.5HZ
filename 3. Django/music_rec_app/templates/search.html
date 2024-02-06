@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h1 class="text-center my_search_text"><b>"{{ query }}"</b>에 대한 검색 결과</h1>
+
+
+        {% comment %} <div class="track-card">
+        <a href="{% url 'music_rec_app:detail' track_id=product.track_id %}">
+            <img class-"album_img" src="{{product.track_picture_url}}" alt="product.name">
+        </a>
+        <div class='names'>
+            <p>{{product.track_name}}</p>
+            <p>{{product.artist_name}}</p>
+        </div> {% endcomment %}
+
+<div class="track-container">
+    {% for product in products %}
+        <div class="track-card-playlist">
+            <a href="{% url 'music_rec_app:detail' track_id=product.track_id %}">
+                <img src="{{ product.track_picture_url }}" alt="Track Image" class="playlist_album">
+                <p class='inpl_names'><strong>{{ product.track_name }}</strong></p>
+                <p class='inpl_names'>{{ product.artist_name }}</p>
+            </a>
+        </div>
+    {% empty %}
+    <div class="row mx-auto">
+        <p class="text-center my_search_text">0건의 결과가 있습니다.</p>
+    </div>
+{% endfor %}
+
+{% endblock %}

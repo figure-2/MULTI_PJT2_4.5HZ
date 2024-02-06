@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h1 class="text-center my_search_text"><b>"{{ query }}"</b> 모아보기 </h1>
+
+<div class="track-container">
+    {% for genre in genres %}
+        <div class="track-card-playlist">
+            <a href="{% url 'music_rec_app:detail' track_id=genre.track_id %}">
+                <img src="{{ genre.track_picture_url }}" alt="Track Image" class="playlist_album">
+                <p class='inpl_names'><strong>{{ genre.track_name }}</strong></p>
+                <p class='inpl_names'>{{ genre.artist_name }}</p>
+            </a>
+        </div>
+    {% empty %}
+    <div class="row mx-auto">
+        <p class="text-center my_search_text">0건의 결과가 있습니다.</p>
+    </div>
+{% endfor %} 
+
+{% endblock %}

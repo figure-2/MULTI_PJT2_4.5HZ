@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    {% comment %} <div class="bg">
+        <video muted autoplay loop>
+          <source src="{% static2 'video/154610.mp4' %}" type="video/mp4">
+        </video>
+    </div> {% endcomment %}
+    <h1 class='index_title'>4.5Hz</h1>
+    <span>
+        {% if user.is_authenticated %}
+            <a href="{% url 'music_rec_app:main' %}" style="font-size: 20px" class="nav_link">Main</a>
+        {% else %}
+            <a href="{% url 'accounts:signup' %}" style="font-size: 20px" class="nav_link">Signup</a>
+            <a href="{% url 'accounts:login' %}" style="font-size: 20px" class="nav_link">Login</a>
+        {% endif %}{% comment %} style="width:200px; height:100px; position:absolute; top:70%; left: 50%;margin: -50px 0 0 -100px;" {% endcomment %}
+    </span>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</body>
+</html>

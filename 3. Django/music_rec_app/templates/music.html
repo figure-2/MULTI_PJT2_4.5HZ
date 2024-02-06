@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="all-container">
+    <div class="item">
+
+        {% comment %} <div class="column-container">
+            <h2>지금 듣고 있는 노래</h2>
+            {% for track in current_track %}
+                <div class="image-container">
+                    <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                    <img src="{{ track.track_picture_url }}" alt="{{ track.track_name }}" class="img">
+                    </a>
+                    <div class='names'>
+                        <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                        <p class='names'><strong>{{ track.track_name }}</strong></p>
+                        <p class='names'>{{ track.artist_name }}</p>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        <div class = "col-md-4 col-lg-3">
+            <div class="card text-bg-light mb-3" style="max-width: 540px;">
+                <h5 class="card-header">음악 검색</h5>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control form-control-lg" type="text" placeholder="Search for..." id="search-input">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button" onclick="searchPost()">Search</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div> {% endcomment %}
+        <div class="column-container">
+            <h2> 음악 검색 </h2>
+                <div class="card-body">
+                    <div class="input-group">
+                        <form class="form-inline my-2 my-lg-0" action="{% url 'music_rec_app:search' %}" method="get">
+                            {%csrf_token%}
+                            <input class="form-control form-control-lg" type="text" placeholder="Search for..." name="q" style="width: 300px; height:40px">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="submit" onclick="searchPost()" style=" width: 80px; height:40px">Search</button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        <div class="column-container">
+            <h2>장르 모아보기</h2>
+            <div class="card-body">
+                <div class="input-group">
+                    <form class="form-inline my-2 my-lg-0" action="{% url 'music_rec_app:search_genre' %}" method="get">
+                        {% csrf_token %}
+                        <div>
+                            <select name="genre" id="genre" required style="width: 200px; height: 40px">
+                                <option value="" selected disabled>장르 고르기</option>
+                                <option value="acoustic">Acoustic</option>
+                                <option value="dance">Dance</option>
+                                <option value="edm">EDM</option>
+                                <option value="hip-hop">Hip-hop</option>
+                                <option value="k-pop">K-pop</option>
+                                <option value="pop">POP</option>
+                                <option value="r-n-b">R&B</option>
+                                <option value="rock">Rock</option>
+                                <option value="romance">Romance</option>
+                                <option value="soul">Soul</option>
+                            </select> 
+                            <input type="submit" value="Search" style="width: 80px; height: 40px">
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+            
+        
+        <div class="column-container">
+            <h2>{{user_age_range}}대 {{user_gender}}에게 가장 핫한 노래</h2>
+            {% for track in hot_songs %}
+                <div class="image-container"> 
+                    <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                    <img src="{{ track.track_picture_url }}" alt="{{ track.track_name }}" class="img" >
+                    </a>
+                    <div>
+                        <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                        <p class='names'><strong>{{ track.track_name }}</strong></p>
+                        <p class='names'>{{ track.artist_name }}</p>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="column-container">
+            <h2>나의 플레이리스트</h2>
+            {% for playlist_id in user_playlist_id %}
+                <div class="image-container">
+                    <a href="{% url 'music_rec_app:playlist_detail' playlist_id=playlist_id %}">
+                    <img src="{{ default_playlist_image }}" alt="Default playlist image" class="img">
+                    </a>
+                    <div class='names'>
+                        <a href="{% url 'music_rec_app:playlist_detail' playlist_id=playlist_id %}">
+                        <p class='names'><strong>Playlist #{{playlist_id}}</strong></p>
+                        </a>
+                    </div>
+                </div> 
+            {% endfor %}
+        </div>
+        <div class="column-container">
+            <h2>나를 위한 새로운 발견</h2>
+            {% for track in recommended_playlists %}
+                <div class="image-container">
+                    <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                    <img src="{{ track.track_picture_url }}" alt="{{ track.track_name }}" class="img">
+                    </a>
+                    <div class='names'>
+                        <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                        <p class='names'><strong>{{ track.track_name }}</strong></p>
+                        <p class='names'>{{ track.artist_name }}</p>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+{% comment %}         
+        <div class="column-container">
+            <h2>접속한 사용자를 위한 음악 추천 </h2>
+            {% for track in recommended_playlists %}
+                <div class="image-container">
+                    <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                        <img src="{{ track.track_picture_url }}" alt="{{ track.track_name }}" class="img">
+                    </a>
+                    <div>
+                        <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                            <p class='names'><strong>{{ track.track_name }}</strong></p>
+                            <p class='names'>{{ track.artist_name }}</p>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div> {% endcomment %}
+
+        <div>
+            <h2>현재 가장 많이 듣고 있는 노래</h2>
+            <div style="text-align: right;"> 
+                <form method="GET" action="">
+                    <select id="time" name="time">
+                        <option value="" selected disabled>시간대 선택</option>
+                        {% for time in unique_times %}
+                            <option value="{{time}}">{{time}}</option>
+                        {% endfor %}
+                    </select> 
+                    <input type="submit" value="확인">
+                </form>
+            </div>
+            <table class="table" style="width:100%">
+                <tr class = "person_track_title">
+                    <th><strong>순위</strong></th>
+                    <th><strong></strong></th>
+                    <th><strong>가수명</strong></th>
+                    <th><strong>제목</strong></th>
+                    <th><strong>재생</strong></th>
+                    <th><strong>start</strong></th>
+                    <th><strong>end</strong></th>
+                </tr>
+                {% for track in streaming_track_agg %}
+                    {% if track.4 == request.GET.time %}
+                        <tr class="person_track_row">  
+                            <td><strong>{{forloop.counter}}</strong></td>
+                            {% if track.0 == "" %}
+                                <td>
+                                    <p>사진준비중</p>
+                                </td>
+                            {% else %}
+                                <td>
+                                    <img src="{{ track.0 }}"style="height: 50px;width: 50px;">
+                                </td>
+                            {% endif %}
+                            <td>{{ track.1 }}</td>  
+                            <td>{{ track.2 }}</td>
+                            <td>{{ track.3 }}</td>
+                            <td>{{ track.4 }}</td>
+                            <td>{{ track.5 }}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+        </div>
+        
+    
+    </div>
+
+    <div class="item2" >
+        <h2>Top50 차트</h2>
+        <p>현재 가장 많이 재생된 트랙의 일일 업데이트</p>
+        {% comment %} <table class="table table-hover">
+            <thead>
+                <div class = 'toptentitle'>
+                    <div>순위</div>
+                    <div>제목</div>
+                    <div>가수명</div>
+                </div>
+            </thead>
+                {% for track in top_50_track %}
+                    <tr>  
+                        <td><strong>{{forloop.counter}}</strong></td>
+                            <td>
+                                <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                                <img src="{{ track.track_picture_url }}" alt="{{ track.track_name }}" style="height: 50px;width: 50px;"></td>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                                {{ track.track_name }}
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">
+                                {{ track.artist_name }}
+                                </a>
+                            </td>  
+                    </tr>
+                
+                {% endfor %}
+                <!-- <tr>
+                    <td>2</td>
+                    <td>{{current_track.track_name}}</td>
+                    <td>{{current_track.artist_name}}</td>
+                </tr> -->
+            </table> {% endcomment %}
+            <table class="table" style="width:120%">
+                <tr class = "person_track_title">
+                    <th><strong>순위</strong></th>
+                    <th><strong></strong></th>
+                    <th><strong>제목</strong></th>
+                    <th><strong>가수명</strong></th>
+                </tr>
+                {% for track in top_50_track %}
+                        <tr class="person_track_row">  
+                            <td><strong>{{forloop.counter}}</strong></td>
+                            <td>
+                                <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}"><img src="{{ track.track_picture_url }}" alt="{{ track.track_name }}" style="height: 50px;width: 50px;"></td></a>
+                            </td>
+                            <td>
+                                <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">{{ track.track_name }}</a>
+                            </td>
+                            <td>
+                                <a href="{% url 'music_rec_app:detail' track_id=track.track_id %}">{{ track.artist_name }}</a>
+                            </td>  
+                        </tr>
+                {% endfor %}
+            </table>
+    </div>
+   
+</div>
+
+
+{% comment %} <aside class="sidebar" style="position: fixed; overflow-y: auto; display: show;">
+    <ul class="kpop_rank">
+        <p>kpop_rank</p>
+        <li></li>
+    </ul>
+
+    <ul class="gender_rec">
+        <li>gender_rec</li>
+        <li></li>
+    </ul>
+
+    <ul class="playlist">
+        <li>playlist</li>
+    </ul>
+
+</aside> {% endcomment %}
+
+{% comment %} <button onclick="toggleSidebar()">Toggle Sidebar</button> {% endcomment %}
+
+{% endblock %}

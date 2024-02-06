@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% comment %} <iframe width="560" height="315" src="{{ music_video }}" frameborder="0" allowfullscreen></iframe> {% endcomment %}
+
+
+<div onclick="history.back()" style="font-size: 28px;">
+    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+</div>   
+
+<div class="all_container_detail">
+    <div class="item_detail">
+        {% comment %} <a href = {{ url }} class='names' target="_blank"> {% endcomment %}
+        <img src="{{ track.track_picture_url }}" alt="Track Image" class="album_img_detail" style="display: block; margin: 0 auto;">
+        {% comment %} </a> {% endcomment %}
+
+    
+    </div>
+
+    <div class="item_detail">
+        <div class="music_info" style="width: 500px;">
+            <p class='names' style="font-size: 30px;"><strong>{{ track.track_name }}</strong></p>
+            <p class='names'style="font-size: 26px;">{{ track.artist_name }}</p>
+            <p class='names' style="font-size: 18px;">발매일 : {{ track.release_date }}</p>
+            <p class='names' style="font-size: 18px;">인기도 : {{ track.track_popularity }}</p>
+            <div class='names' > </div>
+            <p class='names' style="font-size: 18px;">음악 장르 : {{ track.genres }}</p>
+            
+           {% if  track.is_in_playlist  %}
+                {# 플레이리스트에 트랙이 있을 때 제거 버튼 보이기 #}
+                <form method="post" action="{% url 'music_rec_app:remove_from_playlist' track_id=track.track_id %}">
+                    {% csrf_token %}
+                    <button class='plbutton' type="submit" style="font-size: 18px;"
+                    onclick="showAlert2()">플레이리스트에서 빼기</button>
+                </form>
+            {% else %}
+                {# 플레이리스트에 트랙이 없을 때 추가 버튼 보이기 #}
+                <form method="post" action="{% url 'music_rec_app:add_to_playlist' track_id=track.track_id %}">
+                    {% csrf_token %}
+                    <button class='plbutton' type="submit" style="font-size: 18px;"
+                    onclick="showPopup('{{ track.track_id }}');">
+                    플레이리스트에 추가
+                    </button>                
+                </form>
+            {% endif %}
+
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
