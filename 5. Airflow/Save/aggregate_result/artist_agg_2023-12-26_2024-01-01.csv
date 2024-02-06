@@ -1,0 +1,240 @@
+user_id,username,artist_id,artist,cnt,start_date,end_date
+hyunjune,유현준,0il5ZP3xYOECtONJtZ38Ln,KYUHYUN,96,2023-12-26,2024-01-01
+hyunjune,유현준,75MOYjGEyyH5U4ZFHOPvxR,Lim Young Woong,65,2023-12-26,2024-01-01
+hyunjune,유현준,4EPYWwU4c8eG2GzD7MenUA,Kim Feel,39,2023-12-26,2024-01-01
+hyunjune,유현준,5dCvSnVduaFleCnyy98JMo,HEIZE,1,2023-12-26,2024-01-01
+dohyung,이도형,06HL4z0CvFAxyc27GXpf02,Taylor Swift,13,2023-12-26,2024-01-01
+dohyung,이도형,44WCHvwXBOMz6nm7Mu2ReO,Grupo Bryndis,8,2023-12-26,2024-01-01
+dohyung,이도형,3ZMur3elMyOs248ah86NRk,Mach-Hommy,5,2023-12-26,2024-01-01
+dohyung,이도형,4SpbR6yFEvexJuaBpgAU5p,LE SSERAFIM,5,2023-12-26,2024-01-01
+dohyung,이도형,5JZ7CnR6gTvEMKX4g70Amv,Lauv,4,2023-12-26,2024-01-01
+dohyung,이도형,1oSPZhvZMIrWW5I41kPkkY,Jimin,3,2023-12-26,2024-01-01
+dohyung,이도형,66W9LaWS0DPdL7Sz8iYGYe,JP Saxe,3,2023-12-26,2024-01-01
+dohyung,이도형,5y2Xq6xcjJb2jVM54GHK3t,John Legend,2,2023-12-26,2024-01-01
+dohyung,이도형,7FsRH5bw8iWpSbMX1G7xf1,Joan Sebastian,2,2023-12-26,2024-01-01
+dohyung,이도형,4dpARuHxo51G3z768sgnrY,Adele,2,2023-12-26,2024-01-01
+dohyung,이도형,6fBjnfeYEU3VFuQl8RPrp8,Samuray,2,2023-12-26,2024-01-01
+dohyung,이도형,1abeK6nTH1bQUmfhyfSpPh,EMBRZ,1,2023-12-26,2024-01-01
+dohyung,이도형,6jgrgDBt1SbtNbc25sLaTH,Busker Busker,1,2023-12-26,2024-01-01
+dohyung,이도형,4RfI1z9u2xIc5Qnqac4JbO,YUKIKA,1,2023-12-26,2024-01-01
+dohyung,이도형,5xeBMeW0YzWIXSVzAxhM8O,of Montreal,1,2023-12-26,2024-01-01
+dohyung,이도형,6HaGTQPmzraVmaVxvz6EUc,Jung Kook,1,2023-12-26,2024-01-01
+yujin,정유진,2xW3pBjCngD69hC1wIUgjA,Axel Johansson,147,2023-12-26,2024-01-01
+yujin,정유진,4TnGh5PKbSjpYqpIdlW5nz,MONSTA X,113,2023-12-26,2024-01-01
+yujin,정유진,1ikID9RZZMvkuBGDWrqajq,Kasbo,78,2023-12-26,2024-01-01
+yujin,정유진,47mIJdHORyRerp4os813jD,"League of Legends, NewJeans",64,2023-12-26,2024-01-01
+yujin,정유진,0qQQYIK5Sxnzt72fGyTcvs,Ahn Ye Eun,56,2023-12-26,2024-01-01
+yujin,정유진,7nqOGRxlXj7N2JYbgNEjYH,SEVENTEEN,48,2023-12-26,2024-01-01
+yujin,정유진,75MOYjGEyyH5U4ZFHOPvxR,Lim Young Woong,44,2023-12-26,2024-01-01
+yujin,정유진,1Cs0zKBU1kc0i8ypK3B9ai,David Guetta,39,2023-12-26,2024-01-01
+yujin,정유진,6YVMFz59CuY7ngCxTxjpxE,aespa,35,2023-12-26,2024-01-01
+yujin,정유진,45eNHdiiabvmbp4erw26rg,ILLENIUM,26,2023-12-26,2024-01-01
+yujin,정유진,5WUlDfRSoLAfcVSX1WnrxN,Sia,25,2023-12-26,2024-01-01
+yujin,정유진,6HaGTQPmzraVmaVxvz6EUc,Jung Kook,22,2023-12-26,2024-01-01
+yujin,정유진,4cZvsAtZm91PBC0tXlDrP0,Dirty Palm,14,2023-12-26,2024-01-01
+yujin,정유진,3qNVuliS40BLgXGxhdBdqu,TAEYEON,14,2023-12-26,2024-01-01
+yujin,정유진,4SpbR6yFEvexJuaBpgAU5p,LE SSERAFIM,11,2023-12-26,2024-01-01
+yujin,정유진,6HvZYsbFfjnjFrWF950C9d,NewJeans,10,2023-12-26,2024-01-01
+yujin,정유진,13rF01aOogvnkuQXOlgTW8,TAEMIN,9,2023-12-26,2024-01-01
+yujin,정유진,1oSPZhvZMIrWW5I41kPkkY,Jimin,6,2023-12-26,2024-01-01
+yujin,정유진,64KEffDW9EtZ1y2vBYgq8T,Marshmello,5,2023-12-26,2024-01-01
+yujin,정유진,5ttgIeUVka6FLyi00Uu5h8,Jauz,5,2023-12-26,2024-01-01
+yujin,정유진,4xtWjIlVuZwTCeqVAsgEXy,Insane Clown Posse,4,2023-12-26,2024-01-01
+yujin,정유진,250b0Wlc5Vk0CoUsaCY84M,JENNIE,4,2023-12-26,2024-01-01
+yujin,정유진,6l3HvQ5sa6mXTsMTB19rO5,J. Cole,1,2023-12-26,2024-01-01
+yujin,정유진,3JsHnjpbhX4SnySpvpa9DK,V,1,2023-12-26,2024-01-01
+minjin,조민진,7DjwIxbe8kpw4pqnzAMoin,The Beths,146,2023-12-26,2024-01-01
+minjin,조민진,3cjEqqelV9zb4BYE3qDQ4O,EXO,59,2023-12-26,2024-01-01
+minjin,조민진,6HaGTQPmzraVmaVxvz6EUc,Jung Kook,57,2023-12-26,2024-01-01
+minjin,조민진,4iHNK0tOyZPYnBU7nGAgpQ,Mariah Carey,57,2023-12-26,2024-01-01
+minjin,조민진,3BmGtnKgCSGYIUhmivXKWX,Kelly Clarkson,57,2023-12-26,2024-01-01
+minjin,조민진,5lpH0xAS4fVfLkACg9DAuM,Wham!,41,2023-12-26,2024-01-01
+minjin,조민진,6qyi8X6MdP1lu6B1K6yh3h,Silversun Pickups,31,2023-12-26,2024-01-01
+minjin,조민진,1oSPZhvZMIrWW5I41kPkkY,Jimin,27,2023-12-26,2024-01-01
+minjin,조민진,7E1o9IcnpiFQDlAUk2H7Az,Madi Diaz,22,2023-12-26,2024-01-01
+minjin,조민진,3ErHVJMsxTq2lLSmnONBm9,Roy Kim,22,2023-12-26,2024-01-01
+minjin,조민진,1qBsABYUrxg9afpMtyoFKz,WayV,20,2023-12-26,2024-01-01
+minjin,조민진,5BkB3rXc0qIdUtuEnhbK0A,VIXX,17,2023-12-26,2024-01-01
+minjin,조민진,6YVMFz59CuY7ngCxTxjpxE,aespa,17,2023-12-26,2024-01-01
+minjin,조민진,7HTLVyjNf0VRxfIgNcfRRH,Chase Matthew,15,2023-12-26,2024-01-01
+minjin,조민진,4SpbR6yFEvexJuaBpgAU5p,LE SSERAFIM,15,2023-12-26,2024-01-01
+minjin,조민진,6HvZYsbFfjnjFrWF950C9d,NewJeans,14,2023-12-26,2024-01-01
+minjin,조민진,5dCvSnVduaFleCnyy98JMo,HEIZE,13,2023-12-26,2024-01-01
+minjin,조민진,3qNVuliS40BLgXGxhdBdqu,TAEYEON,13,2023-12-26,2024-01-01
+minjin,조민진,6hhqsQZhtp9hfaZhSd0VSD,WJSN,12,2023-12-26,2024-01-01
+minjin,조민진,09C0xjtosNAIXP36wTnWxd,Fats Domino,11,2023-12-26,2024-01-01
+minjin,조민진,0L8ExT028jH3ddEcZwqJJ5,Red Hot Chili Peppers,11,2023-12-26,2024-01-01
+minjin,조민진,5IccCciXwIjKPROLcD1Qao,C4 Pedro,10,2023-12-26,2024-01-01
+minjin,조민진,3gIRvgZssIb9aiirIg0nI3,Jeremy Zucker,9,2023-12-26,2024-01-01
+minjin,조민진,1Ffb6ejR6Fe5IamqA5oRUF,Bring Me The Horizon,9,2023-12-26,2024-01-01
+minjin,조민진,6UBA15slIuadJ8h2lPRPos,Tech N9ne,8,2023-12-26,2024-01-01
+minjin,조민진,5WUlDfRSoLAfcVSX1WnrxN,Sia,8,2023-12-26,2024-01-01
+minjin,조민진,29vPfjqj8X5ri4AJRt8wVM,Peterpan,8,2023-12-26,2024-01-01
+minjin,조민진,1r4hJ1h58CWwUQe3MxPuau,Maluma,8,2023-12-26,2024-01-01
+minjin,조민진,2PsnDm6aGMnPFcqyyII5iQ,푸른새벽,7,2023-12-26,2024-01-01
+minjin,조민진,3JsHnjpbhX4SnySpvpa9DK,V,7,2023-12-26,2024-01-01
+minjin,조민진,4ClziihVpBeFXNyDH83Lde,UMI,7,2023-12-26,2024-01-01
+minjin,조민진,24nUVBIlCGi4twz4nYxJum,fromis_9,6,2023-12-26,2024-01-01
+minjin,조민진,66CXWjxzNUsdJxJ2JdwvnR,Ariana Grande,6,2023-12-26,2024-01-01
+minjin,조민진,511vWnluvbgTL9TDgqlwVZ,Edward Ong,5,2023-12-26,2024-01-01
+minjin,조민진,2lBxgKTiYd4kpfnAnFyI1P,Guus Dielissen,5,2023-12-26,2024-01-01
+minjin,조민진,4GoD5FJCgC0lbzde7ly44M,Biig Piig,4,2023-12-26,2024-01-01
+minjin,조민진,0eHQ9o50hj6ZDNBt6Ys1sD,Yandel,4,2023-12-26,2024-01-01
+minjin,조민진,5LHu1iF8m0XtRBEJbbwSoo,WOOSUNG,4,2023-12-26,2024-01-01
+minjin,조민진,1D1VZGHIwlZ4kCvaZlWF3n,New Gatanga Sound,4,2023-12-26,2024-01-01
+minjin,조민진,4fP8gIS9c2DDH41XpYAJh5,Amelina,4,2023-12-26,2024-01-01
+minjin,조민진,34kKB75YqGjgJQ4dxSc7W3,No Sa Yeon,4,2023-12-26,2024-01-01
+minjin,조민진,4QCyDTsIxeeMEIuYAndqkw,Amy Mastura,4,2023-12-26,2024-01-01
+minjin,조민진,6nfDaffa50mKtEOwR8g4df,GOT7,4,2023-12-26,2024-01-01
+minjin,조민진,0znpFLuaey34oJTE1jHSnT,Alexander Stewart,3,2023-12-26,2024-01-01
+minjin,조민진,13rF01aOogvnkuQXOlgTW8,TAEMIN,3,2023-12-26,2024-01-01
+minjin,조민진,24CgJHK6T7C5OmUbiLLMjJ,Luh Kel,3,2023-12-26,2024-01-01
+minjin,조민진,5TnQc2N1iKlFjYD7CPGvFc,DAY6,3,2023-12-26,2024-01-01
+minjin,조민진,4UXqAaa6dQYAk18Lv7PEgX,Fall Out Boy,3,2023-12-26,2024-01-01
+minjin,조민진,3kkoYvxvV00UXPJCqMCljL,Caye,3,2023-12-26,2024-01-01
+minjin,조민진,28uJnu5EsrGml2tBd7y8ts,Vintage Culture,3,2023-12-26,2024-01-01
+minjin,조민진,1MF797sg8WfxKRXELhlqtT,As One,3,2023-12-26,2024-01-01
+minjin,조민진,75MOYjGEyyH5U4ZFHOPvxR,Lim Young Woong,3,2023-12-26,2024-01-01
+minjin,조민진,5Bcrb5qQMVTEbJ43fdIS4A,Mipso,3,2023-12-26,2024-01-01
+minjin,조민진,2datC2OML2YxykP6vnDRmg,Yazmin Lacey,3,2023-12-26,2024-01-01
+minjin,조민진,0Njy6yR9LykNKYg9yE23QN,Nardo Wick,3,2023-12-26,2024-01-01
+minjin,조민진,48CUA59SDed3IdCctKndud,Volkan Konak,3,2023-12-26,2024-01-01
+minjin,조민진,0bDdOBGVCFVt0f8N9ldW1k,BEN,2,2023-12-26,2024-01-01
+minjin,조민진,4WSDfufVR7neAAJngREPth,Husam Al Rassam,2,2023-12-26,2024-01-01
+minjin,조민진,7CAtmuyGlzYum4BKfl34ij,Gorki,2,2023-12-26,2024-01-01
+minjin,조민진,2GEPtT5RDxrmdi0A4mbDi7,Brown Eyed Girls,2,2023-12-26,2024-01-01
+minjin,조민진,0w4e7HVbqAHFPN6VkIlvhe,Suresh Wadkar,2,2023-12-26,2024-01-01
+minjin,조민진,3kzwYV3OCB010YfXMF0Avt,Alvvays,2,2023-12-26,2024-01-01
+minjin,조민진,3byKtMzSP9AhdnWbWz7geB,Mohammed Abdu,2,2023-12-26,2024-01-01
+minjin,조민진,5snNHNlYT2UrtZo5HCJkiw,Epik High,2,2023-12-26,2024-01-01
+minjin,조민진,4muJrGMndyYWqZtfk8OWy4,BoA,2,2023-12-26,2024-01-01
+minjin,조민진,0suJQKq7btdiC24Hr6YtyY,De Mens,2,2023-12-26,2024-01-01
+minjin,조민진,2RxCv6j8Wu2rYbmtOBvg6F,Abdul Majeed Abdullah,2,2023-12-26,2024-01-01
+minjin,조민진,7n2Ycct7Beij7Dj7meI4X0,TWICE,2,2023-12-26,2024-01-01
+minjin,조민진,4TnGh5PKbSjpYqpIdlW5nz,MONSTA X,2,2023-12-26,2024-01-01
+minjin,조민진,6i9IwqxrIrIQZKJbBOBc3T,Edy Hafler,2,2023-12-26,2024-01-01
+minjin,조민진,7FZVwOgSZUIuyjj2AnGkko,Koma Azad,2,2023-12-26,2024-01-01
+minjin,조민진,0NIIxcxNHmOoyBx03SfTCD,Tinashe,2,2023-12-26,2024-01-01
+minjin,조민진,3HiuzBlSW7pGDXlSFMhO2g,Young Dolph,2,2023-12-26,2024-01-01
+minjin,조민진,0XATRDCYuuGhk0oE7C0o5G,MAMAMOO,2,2023-12-26,2024-01-01
+minjin,조민진,01rgao9OzfBm2BOHWJpi1Y,Espinoza Paz,2,2023-12-26,2024-01-01
+minjin,조민진,4B1emXLiBtbjjwGmLqVsHO,Meda,2,2023-12-26,2024-01-01
+minjin,조민진,7nC05zmJukRGYObQeRgg3x,Jack Savoretti,2,2023-12-26,2024-01-01
+minjin,조민진,2RhgnQNC74QoBlaUvT4MEe,The Growlers,1,2023-12-26,2024-01-01
+minjin,조민진,7tYKF4w9nC0nq9CsPZTHyP,SZA,1,2023-12-26,2024-01-01
+minjin,조민진,4sj6D0zlMOl25nprDJBiU9,Andy Williams,1,2023-12-26,2024-01-01
+minjin,조민진,4qRXrzUmdy3p33lgvJEzdv,Paul Kim,1,2023-12-26,2024-01-01
+minjin,조민진,4GcpBLY8g8NrmimWbssM26,Mndsgn,1,2023-12-26,2024-01-01
+minjin,조민진,2PSJ6YriU7JsFucxACpU7Y,CHUNG HA,1,2023-12-26,2024-01-01
+minjin,조민진,1GxkXlMwML1oSg5eLPiAz3,Michael Bublé,1,2023-12-26,2024-01-01
+minjin,조민진,5rwUYLyUq8gBsVaOUcUxpE,Lawrence,1,2023-12-26,2024-01-01
+minjin,조민진,4gzpq5DPGxSnKTe4SA8HAU,Coldplay,1,2023-12-26,2024-01-01
+minjin,조민진,4i4bFvmrHlkchdwrlYlqUh,Chayala Neuhaus,1,2023-12-26,2024-01-01
+minjin,조민진,3hzcooxMtbApMTvvn6XKVA,G.NA,1,2023-12-26,2024-01-01
+minjin,조민진,2RSsuFG2pkU9sGZ85UzFgl,Han Seungwoo,1,2023-12-26,2024-01-01
+minjin,조민진,7oFIkpNpLrTBgZW6w55W1J,4MEN,1,2023-12-26,2024-01-01
+minjin,조민진,1McMsnEElThX1knmY4oliG,Olivia Rodrigo,1,2023-12-26,2024-01-01
+minjin,조민진,1iyaH6NJWncvktAfUcNht8,N3WPORT,1,2023-12-26,2024-01-01
+minjin,조민진,5519qQ4H5p0qIIidEWUOB6,Ledri Vula,1,2023-12-26,2024-01-01
+minjin,조민진,1sVSMPPNMMSZ7cQNfbvMOe,Eddy Kim,1,2023-12-26,2024-01-01
+minjin,조민진,2hlmm7s2ICUX0LVIhVFlZQ,Gunna,1,2023-12-26,2024-01-01
+minjin,조민진,4tm8CEdm4pkQsEh4jIr9Yp,Santa Fe Klan,1,2023-12-26,2024-01-01
+sein,최세인,3cjEqqelV9zb4BYE3qDQ4O,EXO,127,2023-12-26,2024-01-01
+sein,최세인,4SpbR6yFEvexJuaBpgAU5p,LE SSERAFIM,97,2023-12-26,2024-01-01
+sein,최세인,5MynxBz4ZMqvUzpcxTZl4C,Therapie TAXI,76,2023-12-26,2024-01-01
+sein,최세인,4mbvd7ZJ2goftjy1L33LiB,John Park,74,2023-12-26,2024-01-01
+sein,최세인,13y7CgLHjMVRMDqxdx0Xdo,Gucci Mane,51,2023-12-26,2024-01-01
+sein,최세인,7nqOGRxlXj7N2JYbgNEjYH,SEVENTEEN,47,2023-12-26,2024-01-01
+sein,최세인,5Bcrb5qQMVTEbJ43fdIS4A,Mipso,38,2023-12-26,2024-01-01
+sein,최세인,5X4LWwbUFNzPkEas04uU82,DVBBS,28,2023-12-26,2024-01-01
+sein,최세인,4XDi67ZENZcbfKnvMnTYsI,Jay Park,28,2023-12-26,2024-01-01
+sein,최세인,4O15NlyKLIASxsJ0PrXPfz,Lil Uzi Vert,22,2023-12-26,2024-01-01
+sein,최세인,23m7tUHLULVyBAAIYHbsgT,HUS,21,2023-12-26,2024-01-01
+sein,최세인,0eHQ9o50hj6ZDNBt6Ys1sD,Yandel,20,2023-12-26,2024-01-01
+sein,최세인,1VJZvjGu80pBwk0qeJz8ZR,Drik Barbosa,19,2023-12-26,2024-01-01
+sein,최세인,4iHNK0tOyZPYnBU7nGAgpQ,Mariah Carey,17,2023-12-26,2024-01-01
+sein,최세인,3IJCdgkBZbieocLZ4e94GZ,Cherry Bullet,16,2023-12-26,2024-01-01
+sein,최세인,699OTQXzgjhIYAHMy9RyPD,Playboi Carti,16,2023-12-26,2024-01-01
+sein,최세인,78YqeIji3mgAS2K1Maca6x,Dylan Scott,16,2023-12-26,2024-01-01
+sein,최세인,2KC9Qb60EaY0kW4eH68vr3,ITZY,16,2023-12-26,2024-01-01
+sein,최세인,68KmkJeZGfwe1OUaivBa2L,ATEEZ,16,2023-12-26,2024-01-01
+sein,최세인,59Yq0xrABEihHANsfo9QMT,Blanke,14,2023-12-26,2024-01-01
+sein,최세인,0kD8IT1CzF7js2XKM9lLLa,STARSET,13,2023-12-26,2024-01-01
+sein,최세인,2o5jDhtHVPhrJdv3cEQ99Z,Tiësto,13,2023-12-26,2024-01-01
+sein,최세인,3NTbOmzlj2cL86XFuDVFvZ,MAN WITH A MISSION,12,2023-12-26,2024-01-01
+sein,최세인,1R52cwGf75yTf7I3Q0Irf8,T-ARA,12,2023-12-26,2024-01-01
+sein,최세인,3TVXtAsR1Inumwj472S9r4,Drake,10,2023-12-26,2024-01-01
+sein,최세인,0OEYE03fBF2VoTBxGuaUxL,Chri$tian Gate$,9,2023-12-26,2024-01-01
+sein,최세인,6oMuImdp5ZcFhWP0ESe6mG,Migos,9,2023-12-26,2024-01-01
+sein,최세인,6paE8ghTau4qwwNzVRSgjR,She Past Away,8,2023-12-26,2024-01-01
+sein,최세인,2gduEC76ry33RVurAvT05p,Nathan Dawe,8,2023-12-26,2024-01-01
+sein,최세인,6qyi8X6MdP1lu6B1K6yh3h,Silversun Pickups,8,2023-12-26,2024-01-01
+sein,최세인,2GEPtT5RDxrmdi0A4mbDi7,Brown Eyed Girls,7,2023-12-26,2024-01-01
+sein,최세인,5d1JhBfyb58upMXCZOdbQu,Phil Wickham,6,2023-12-26,2024-01-01
+sein,최세인,68vPeaQOlnY1aA3iBKCEpG,HIGH and MIGHTY COLOR,6,2023-12-26,2024-01-01
+sein,최세인,6ZR3rfdytKqMjLPxfbTar0,Alexa Goddard,6,2023-12-26,2024-01-01
+sein,최세인,7f4ignuCJhLXfZ9giKT7rH,NCT 127,6,2023-12-26,2024-01-01
+sein,최세인,13kJgvU22LHMsJtGWLmx7W,Girl's Day,5,2023-12-26,2024-01-01
+sein,최세인,4DdkRBBYG6Yk9Ka8tdJ9BW,Offset,5,2023-12-26,2024-01-01
+sein,최세인,7o96HO2zrujyATtVsqGhh3,Goth Babe,5,2023-12-26,2024-01-01
+sein,최세인,76M2Ekj8bG8W7X2nbx2CpF,NGHTMRE,4,2023-12-26,2024-01-01
+sein,최세인,4TEK9tIkcoxib4GxT3O4ky,KISS OF LIFE,4,2023-12-26,2024-01-01
+sein,최세인,6EPlBSH2RSiettczlz7ihV,Sleepy Hallow,4,2023-12-26,2024-01-01
+sein,최세인,61YE3whKiuRr83j1yOm5M7,Augustana,4,2023-12-26,2024-01-01
+sein,최세인,7p1fL0cAuCPDMG6oBswFhM,Maretu,4,2023-12-26,2024-01-01
+sein,최세인,2FXC3k01G6Gw61bmprjgqS,Hozier,4,2023-12-26,2024-01-01
+sein,최세인,2v7wIbCkIzxOfT3GnqCexD,Cody Jinks,4,2023-12-26,2024-01-01
+sein,최세인,13rF01aOogvnkuQXOlgTW8,TAEMIN,4,2023-12-26,2024-01-01
+sein,최세인,4AVFqumd2ogHFlRbKIjp1t,Alesso,3,2023-12-26,2024-01-01
+sein,최세인,2hRQKC0gqlZGPrmUKbcchR,SHINee,3,2023-12-26,2024-01-01
+sein,최세인,0Sadg1vgvaPqGTOjxu0N6c,Girls' Generation,3,2023-12-26,2024-01-01
+sein,최세인,4igDSX1kgfWbVTDCywcBGm,Johnnyswim,3,2023-12-26,2024-01-01
+sein,최세인,1VPmR4DJC1PlOtd0IADAO0,$uicideboy$,3,2023-12-26,2024-01-01
+sein,최세인,5SMVzTJyKFJ7TUb46DglcH,Parliament,3,2023-12-26,2024-01-01
+sein,최세인,5I6ni4YWY0WJUs6rFqufxT,The Main Squeeze,3,2023-12-26,2024-01-01
+sein,최세인,2RhgnQNC74QoBlaUvT4MEe,The Growlers,3,2023-12-26,2024-01-01
+sein,최세인,34JZOVpxRwjTgbt5kMfRtX,Brandon Williams,3,2023-12-26,2024-01-01
+sein,최세인,3ZZzT0naD25RhY2uZvIKkJ,EVERGLOW,3,2023-12-26,2024-01-01
+sein,최세인,3p8H8HTn04KXh2NRzhKScl,PSYQUI,3,2023-12-26,2024-01-01
+sein,최세인,16oZKvXb6WkQlVAjwo2Wbg,The Lumineers,2,2023-12-26,2024-01-01
+sein,최세인,6pRi6EIPXz4QJEOEsBaA0m,Chris Tomlin,2,2023-12-26,2024-01-01
+sein,최세인,0L8ExT028jH3ddEcZwqJJ5,Red Hot Chili Peppers,2,2023-12-26,2024-01-01
+sein,최세인,6e8OTLDQpaz1Tl2GEaxsNj,Matthew West,2,2023-12-26,2024-01-01
+sein,최세인,4MXUO7sVCaFgFjoTI5ox5c,Sufjan Stevens,2,2023-12-26,2024-01-01
+sein,최세인,65HuWBUC1d8ty1q6J42Nfi,Cultura Profética,2,2023-12-26,2024-01-01
+sein,최세인,4KWTAlx2RvbpseOGMEmROg,R.E.M.,2,2023-12-26,2024-01-01
+sein,최세인,1Cs0zKBU1kc0i8ypK3B9ai,David Guetta,2,2023-12-26,2024-01-01
+sein,최세인,6y8XlgIV8BLlIg1tT1R10i,Old Dominion,2,2023-12-26,2024-01-01
+sein,최세인,68TCVp5t1Dxi2TvNuYoYK0,OHHYUK,2,2023-12-26,2024-01-01
+sein,최세인,62huveC2Mmi9nfW0ySqNwo,Djodje,2,2023-12-26,2024-01-01
+sein,최세인,2IvkS5MXK0vPGnwyJsrEyV,Eric Church,2,2023-12-26,2024-01-01
+sein,최세인,246dkjvS1zLTtiykXe5h60,Post Malone,2,2023-12-26,2024-01-01
+sein,최세인,3jK9MiCrA42lLAdMGUZpwa,Anderson .Paak,2,2023-12-26,2024-01-01
+sein,최세인,0oBsnAC3fzYkTHF3bkfNx6,Phony Ppl,2,2023-12-26,2024-01-01
+sein,최세인,0ghlgldX5Dd6720Q3qFyQB,TOMORROW X TOGETHER,2,2023-12-26,2024-01-01
+sein,최세인,1i8SpTcr7yvPOmcqrbnVXY,Ozuna,2,2023-12-26,2024-01-01
+sein,최세인,0k7JZhYS35IewiKNHW7KMj,EGOIST,2,2023-12-26,2024-01-01
+sein,최세인,3XHO7cRUPCLOr6jwp8vsx5,alt-J,2,2023-12-26,2024-01-01
+sein,최세인,2dIgFjalVxs4ThymZ67YCE,Stray Kids,1,2023-12-26,2024-01-01
+sein,최세인,22bE4uQ6baNwSHPVcDxLCe,The Rolling Stones,1,2023-12-26,2024-01-01
+sein,최세인,0K1q0nXQ8is36PzOKAMbNe,Spoon,1,2023-12-26,2024-01-01
+sein,최세인,3HVdAiMNjYrQIKlOGxoGh5,Rob Zombie,1,2023-12-26,2024-01-01
+sein,최세인,2ZRQcIgzPCVaT9XKhXZIzh,Gryffin,1,2023-12-26,2024-01-01
+sein,최세인,2LIk90788K0zvyj2JJVwkJ,Jack Harlow,1,2023-12-26,2024-01-01
+sein,최세인,0GG2cWaonE4JPrjcCCQ1EG,SG Lewis,1,2023-12-26,2024-01-01
+sein,최세인,1iNqsUDUraNWrj00bqssQG,Dreamville,1,2023-12-26,2024-01-01
+sein,최세인,1gBUSTR3TyDdTVFIaQnc02,NCT DREAM,1,2023-12-26,2024-01-01
+sein,최세인,5GcWBUX00IPuWVGMIRK1sS,Residente,1,2023-12-26,2024-01-01
+sein,최세인,3ILvL0HM0cST4iR8RzQh2V,DreamNote,1,2023-12-26,2024-01-01
+sein,최세인,3AA28KZvwAUcZuOKwyblJQ,Gorillaz,1,2023-12-26,2024-01-01
+sein,최세인,53XhwfbYqKCa1cC15pYq2q,Imagine Dragons,1,2023-12-26,2024-01-01
+sein,최세인,3aQeKQSyrW4qWr35idm0cy,T-Pain,1,2023-12-26,2024-01-01
+sein,최세인,6KImCVD70vtIoJWnq6nGn3,Harry Styles,1,2023-12-26,2024-01-01
+sein,최세인,1p6CdzJRoicjRcSdWoB9Qc,Mitchell Tenpenny,1,2023-12-26,2024-01-01
+sein,최세인,0ABk515kENDyATUdpCKVfW,Westside Gunn,1,2023-12-26,2024-01-01
+sein,최세인,2RxCv6j8Wu2rYbmtOBvg6F,Abdul Majeed Abdullah,1,2023-12-26,2024-01-01
+sein,최세인,3V0ZQW0dNuVaFtbVYgSI24,Claire Rosinkranz,1,2023-12-26,2024-01-01
+sein,최세인,0cc6vw3VN8YlIcvr1v7tBL,Mötley Crüe,1,2023-12-26,2024-01-01
+sein,최세인,4muJrGMndyYWqZtfk8OWy4,BoA,1,2023-12-26,2024-01-01
+sein,최세인,5snNHNlYT2UrtZo5HCJkiw,Epik High,1,2023-12-26,2024-01-01
+sein,최세인,6FxuPrpa8phaP3Xn73emhT,The Wood Brothers,1,2023-12-26,2024-01-01
