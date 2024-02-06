@@ -1,0 +1,5 @@
+v1
+{"path":"file:///home/ubuntu/Data_Engineering/kafka-spark-streaming/output/part-00000-27caf81a-f270-4fe1-af41-603b525b2bc6-c000.csv","size":0,"isDir":false,"modificationTime":1704262700217,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/ubuntu/Data_Engineering/kafka-spark-streaming/output/part-00037-17e2f847-7803-4468-ba20-91f2dcec079c-c000.csv","size":173,"isDir":false,"modificationTime":1704262701101,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/ubuntu/Data_Engineering/kafka-spark-streaming/output/part-00118-f1078199-353e-4088-af67-38c688da8ad1-c000.csv","size":154,"isDir":false,"modificationTime":1704262702869,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/ubuntu/Data_Engineering/kafka-spark-streaming/output/part-00151-e6e34e3a-a8ab-4ce3-ae62-7ac1a64ab40a-c000.csv","size":142,"isDir":false,"modificationTime":1704262703733,"blockReplication":1,"blockSize":33554432,"action":"add"}
