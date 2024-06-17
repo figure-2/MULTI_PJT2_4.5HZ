@@ -71,6 +71,7 @@
 - DB: <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"> <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white">
 - Environment(S/W): - <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=Linux&logoColor=black"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=Ubuntu&logoColor=white">
 - ETC: <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=Jupyter&logoColor=white"> <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=VisualStudioCode&logoColor=white">
+  > Workflow ![workflow.JPG](6.%20Project%20Results/첨부파일/workflow.JPG)
 
 > 데이터 구성도 (ERD) ![ERD.PNG](6.%20Project%20Results/첨부파일/ERD.PNG)
 
@@ -79,4 +80,4 @@
 
 # [🔗발표자료](<https://github.com/figure-2/MULTI_PJT2_4.5HZ/blob/master/6.%20Project%20Results/(D29)_4.5HZ_%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf>)
 
-# 📽시연 [🔗영상Link](https://www.youtube.com/watch?v=Qgy6noP63Cg)
+# 📽시연 [🔗유튜브 영상Link](https://www.youtube.com/watch?v=Qgy6noP63Cg)
